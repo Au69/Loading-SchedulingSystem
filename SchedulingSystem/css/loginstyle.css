@@ -1,0 +1,108 @@
+body {
+    background-image: url("images/system_bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 300px;
+}
+
+
+.login-container h2 {
+    margin-bottom: 20px;
+    color: #870B0B;
+}
+
+.login-container .input-group {
+    margin-bottom: 15px;
+}
+
+.login-container .input-group label {
+    display: block;
+    text-align: left;
+    color: #870B0B;
+    margin-bottom: 5px;
+}
+
+.login-container .input-group input {
+    width: calc(100% - 22px); /* Adjust width to fit within container padding */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensures padding and border are included in the width calculation */
+}
+
+
+.login-container .input-group input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+.login-container .input-group .remember-me {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.login-container .login-btn {
+    background: #d9534f;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+.login-container .login-btn:hover {
+    background: #870B0B;
+}
+
+.login-container .logo {
+    margin-bottom: 20px;
+}
+
+.login-container .logo img {
+    width: 100px;
+    height: auto;
+}
+
+.logo {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.logo img {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+}
+
+.login-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 300px;
+}
+
