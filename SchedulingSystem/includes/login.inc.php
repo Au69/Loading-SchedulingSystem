@@ -15,20 +15,19 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         // Check if input fields are empty
         if (is_input_empty($username, $pass)) {
             $errors["empty_input"] = "Fill in all fields!";
-        }
+        }else{
 
         // Fetch user details
-        $result = get_user($pdo, $username);
+    $result = get_user($pdo, $username);
 
-        // Check if the username is incorrect
-        if (is_username_wrong($result)) {
-            $errors["login_incorrect"] = "Incorrect login details!";
-        }
-
+    // Check if the username is incorrect
+    if (is_username_wrong($result)) {
+        $errors["login_incorrect"] = "Incorrect login details!";
+    } elseif (is_password_wrong($pass, $result["pass"])) {
         // If the username is valid, check the password
-        if (!is_username_wrong($result) && is_password_wrong($pass, $result["pass"])) {
-            $errors["login_incorrect"] = "Incorrect login details!";
-        }
+        $errors["login_incorrect"] = "Incorrect login details!";
+    }
+    }
 
         // If there are errors, store them in the session and redirect back
         if (!empty($errors)) {
