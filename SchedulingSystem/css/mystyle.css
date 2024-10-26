@@ -1,0 +1,183 @@
+
+* {
+    margin: 0%;
+}
+
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* General header styling */
+.header {
+    background-color: #870B0B; /* Maroon background */
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Logo styling */
+.header .logo img {
+    width: 60px; /* Adjust size of the logo */
+    height: auto;
+    margin-left: 20px;
+}
+
+/* Navigation menu styling */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: #222020;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 16px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    background-color: #e6e6e6;
+    color: #870B0B;
+    border-radius: 4px;
+}
+
+/* Search bar styling */
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.search-container input[type="text"] {
+    padding: 6px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.search-container button {
+    padding: 6px 10px;
+    background-color: #ffffff;
+    border: none;
+    color: #800000;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.search-container button:hover {
+    background-color: #e6e6e6;
+}
+
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Main container for content */
+.container {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+
+/* Overview section */
+.overview {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 60%;
+    margin-right: 20px;
+}
+
+.overview h2 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.overview .overview-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.overview-item h3 {
+    font-size: 18px;
+    color: #333;
+}
+
+.overview-item .icon {
+    font-size: 36px;
+    color: #333;
+}
+
+/* Schedule section */
+.schedule {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 40%;
+}
+
+.schedule h2 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.schedule .table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.schedule .table th,
+.schedule .table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.schedule .table th {
+    background-color: #f5f5f5;
+    font-weight: bold;
+}
+
+.schedule .table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Style for small notification items in the overview */
+.overview-item h3 span {
+    color: #5e72e4;
+    font-size: 24px;
+}
+
+/* Style for conflicts section (with warning colors) */
+.overview-item.conflicts h3 span {
+    color: #e63946;
+    font-size: 24px;
+}
+
