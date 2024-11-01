@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+}
+
+.header {
+    background-color: #870B0B;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.header .logo img {
+    width: 60px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #FFFFFF;
+    list-style: none;
+    padding: 10px 0;
+    border: 2px solid #898282;
+}
+
+.navbar a {
+    color: #222020;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+.search-container input {
+    padding: 6px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+.search-container button {
+    padding: 6px;
+    background-color: white;
+    border: none;
+    color: #800000;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+/* Account Settings Dropdown */
+.account-settings {
+    position: relative;
+}
+
+.account-settings .dropdown-toggle {
+    color: #222020;
+    text-decoration: none;
+}
+
+.account-settings .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #333;
+    list-style: none;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.account-settings .dropdown-menu li {
+    margin: 5px 0;
+}
+
+.account-settings .dropdown-menu li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 5px 10px;
+}
+
+.account-settings .dropdown-menu li a:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+/* Show dropdown on hover */
+.account-settings:hover .dropdown-menu {
+    display: block;
+}
+
+
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+h2 {
+    color: #333;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.schedule-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.filter-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.schedule-filter, .schedule-day {
+    margin-right: 10px;
+}
+
+.schedule-day {
+    margin-left: auto; /* Pushes schedule-day to the right side */
+}
+
+.edit-button {
+    margin-right: 10px;
+}
+
+
+.status {
+    padding: 5px 10px;
+    border-radius: 3px;
+    color: white;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.status.ongoing {
+    background-color: #7FB3D5;
+}
+
+.status.conflict {
+    background-color: #E74C3C;
+}
+
+/* Table Styles */
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+}
+
+.schedule-table th, .schedule-table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.schedule-table th {
+    background-color: #333;
+    color: white;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar li {
+        margin: 10px 0;
+    }
+
+    .header, .search-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .view-btn {
+        font-size: 16px;
+    }
+}
